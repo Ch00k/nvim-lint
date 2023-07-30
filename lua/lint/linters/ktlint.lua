@@ -1,7 +1,7 @@
 return {
   cmd = 'ktlint',
   stdin = true,
-  args = { '--android', '--reporter=json', '--stdin' },
+  args = { 'log-level=error', '--reporter=json', '--stdin' },
   stream = 'stderr',
   ignore_exitcode = true,
   parser = function(output)
